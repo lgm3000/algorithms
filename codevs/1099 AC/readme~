@@ -1,0 +1,8 @@
+probably NP problem hahahhahahahahhahahhahahahahha
+
+requires duplicate check to avoid, uh, duplicates
+
+BFS:
+	moderated exhaustive search, which will consider all available branches on current state, before going ♂ deeper
+	Halts upon most shallow hit
+

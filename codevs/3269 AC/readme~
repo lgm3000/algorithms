@@ -1,0 +1,17 @@
+mixed knapsack:
+three algorithms are of main interest:
+	-complete knapsack:
+		v[i][j] = max v[i-1][j-w] +val, v[i-1][j] , v[i][j-w] +val
+	-01 knapsack
+		v[i][j] = max v[i-1][j-w] +val, v[i-1][j] +val
+	-binary division
+		dividing a number into its binary components, will simplify the scenario when a
+		certain item has multiple instances when using 01 knapsack dynamic algorithm:
+		Instead of N instances, we only use lgN
+
+If we want to reduce spacial complexity, consider V[j] to be the optimal value for space j
+	-complete:
+		v[j] = max v[j-w] + val , v[j]
+	-01:
+		v[j] = max v[j-w](without current item) + val, v[j]
+		So if we iterate 

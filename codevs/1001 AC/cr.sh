@@ -1,0 +1,4 @@
+g++ gen.cpp -o gen
+./gen > input1.in
+g++ 1001_b.cpp -o 1001_b
+cat input1.in | ./1001_b > output1.out

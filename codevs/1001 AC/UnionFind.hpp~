@@ -1,0 +1,23 @@
+class UnionElement{
+public:
+	bool is_sameUni(int a,int b){
+		while(uni[uni[a]]!=a){a = uni[a] = uni[uni[a]];}
+		while(uni[uni[b]]!=b){b = uni[b] = uni[uni[b]];}
+		if(uni[a]!=uni[b]) return false;
+		else return true;
+	}
+
+
+	void fuseUnion(int a,int b){
+		while(uni[uni[a]]!=a){a = uni[a] = uni[uni[a]];}
+		while(uni[uni[b]]!=b){b = uni[b] = uni[uni[b]];}
+		if(uni[a]!=uni[b]) uni[b] = uni[a];
+	}
+	void initiate(){
+		for(int i = 0;i<100;i++) uni[i] = 0;
+	}
+private:
+
+	int uni[1000];
+};
+

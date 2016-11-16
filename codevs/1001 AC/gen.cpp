@@ -1,0 +1,10 @@
+#include<iostream>
+const int N = 500;
+int main(){
+int a=0;
+std::cout << N <<" "<< N-1 <<"\n";
+for(int i = 1;i<N;i++)
+	std::cout << a+i << " " << a+1+i << " " << (i*5153487%1568<0 ?(-1)*i*5153487%1568:i*5153487%1568) << "\n";
+std::cout << 1 <<" "<< N;
+return 0;
+}

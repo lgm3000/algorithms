@@ -1,0 +1,14 @@
+A blend of
+	Union find algorithm
+&
+	slightly varied Kruskal Algorithm
+
+Most errors were minor shit ones, i.e. in QS, incorrect if statements, mixed up i, j notations
+
+The program selects the minimal tree in which both the beginning and end nodes are present, by adding branches one by one;
+	Then cuts off smaller routes, until the tree becomes invalid.
+
+Expected Time Complexity O(m^2)
+Optimizations done to following conditions:
+	-The tree is a Long tree, the required nodes are at both ends.O(m^2)->O(m)
+
